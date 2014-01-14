@@ -2,7 +2,7 @@
 
 This is an Android demo application for displaying the latest box office movies using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
 
-![Screen](http://i.imgur.com/zQPzAxD.png)
+<img src="http://i.imgur.com/zQPzAxD.png" alt="Screen Demo" width="350" />
 
 ## Overview
 
