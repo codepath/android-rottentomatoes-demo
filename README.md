@@ -4,6 +4,19 @@ This is an Android demo application for displaying the latest box office movies 
 
 <img src="http://i.imgur.com/zQPzAxD.png" alt="Screen Demo" width="350" />
 
+## Installation
+
+Quick note is that you must **provide your own API key** for RottenTomatoes in order to use this demo. To get an API key, you need to [register for an account](http://developer.rottentomatoes.com/member/register) (or [sign in](https://secure.mashery.com/login/developer.rottentomatoes.com/)). Once you have the key, put the key into the `API_KEY` constant in the `src/com/codepath/example/rottentomatoes/RottenTomatoesClient.java` file: 
+
+```java
+public class RottenTomatoesClient {
+  private final String API_KEY = "ENTER-KEY-HERE";
+  // ...
+}
+```
+
+Once you've setup the key and imported the project into Eclipse, you should be all set.
+
 ## Overview
 
 The app does the following:
