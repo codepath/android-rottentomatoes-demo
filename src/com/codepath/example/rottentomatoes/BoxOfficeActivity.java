@@ -7,7 +7,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -16,6 +20,7 @@ public class BoxOfficeActivity extends Activity {
 	private ListView lvMovies;
 	private BoxOfficeMoviesAdapter adapterMovies;
 	private RottenTomatoesClient client;
+	public static final String MOVIE_DETAIL_KEY = "movie";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,7 @@ public class BoxOfficeActivity extends Activity {
 		lvMovies.setAdapter(adapterMovies);
 		// Fetch the data remotely
 		fetchBoxOfficeMovies();
+		setupMovieSelectedListener();
 	}
 
 	private void fetchBoxOfficeMovies() {
@@ -45,6 +51,17 @@ public class BoxOfficeActivity extends Activity {
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}
+			}
+		});
+	}
+	
+	public void setupMovieSelectedListener() {
+		lvMovies.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View item, int position, long rowId) {
+				Intent i = new Intent(BoxOfficeActivity.this, BoxOfficeDetailActivity.class);
+				i.putExtra(MOVIE_DETAIL_KEY, adapterMovies.getItem(position));
+				startActivity(i);
 			}
 		});
 	}

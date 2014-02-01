@@ -1,5 +1,6 @@
 package com.codepath.example.rottentomatoes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
@@ -8,11 +9,16 @@ import org.json.JSONObject;
 
 import android.text.TextUtils;
 
-public class BoxOfficeMovie {
+public class BoxOfficeMovie implements Serializable {
+	private static final long serialVersionUID = -8959832007991513854L;
 	private String title;
 	private int year;
 	private String synopsis;
 	private String posterUrl;
+	private String largePosterUrl;
+	private String criticsConsensus;
+	private int audienceScore;
+
 	private int criticsScore;
 	private ArrayList<String> castList;
 
@@ -27,7 +33,10 @@ public class BoxOfficeMovie {
 			b.year = jsonObject.getInt("year");
 			b.synopsis = jsonObject.getString("synopsis");
 			b.posterUrl = jsonObject.getJSONObject("posters").getString("thumbnail");
+			b.largePosterUrl = jsonObject.getJSONObject("posters").getString("profile");
+			b.criticsConsensus = jsonObject.getString("critics_consensus");
 			b.criticsScore = jsonObject.getJSONObject("ratings").getInt("critics_score");
+			b.audienceScore = jsonObject.getJSONObject("ratings").getInt("audience_score");
 			// Construct simple array of cast names
 			b.castList = new ArrayList<String>();
 			JSONArray abridgedCast = jsonObject.getJSONArray("abridged_cast");
@@ -88,4 +97,17 @@ public class BoxOfficeMovie {
 	public String getCastList() {
 		return TextUtils.join(", ", castList);
 	}
+	
+	public String getLargePosterUrl() {
+		return largePosterUrl;
+	}
+
+	public String getCriticsConsensus() {
+		return criticsConsensus;
+	}
+	
+	public int getAudienceScore() {
+		return audienceScore;
+	}
+
 }

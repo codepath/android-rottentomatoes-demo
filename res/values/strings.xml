@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="box_office_title">Box Office Movies</string>
+    <string name="title_activity_box_office_detail">BoxOfficeDetailActivity</string>
+
 </resources>

@@ -4,13 +4,16 @@
     android:layout_height="match_parent"
     android:gravity="top"
     android:padding="5dp" >
-
+    
+    <!-- @drawable/large_movie_poster sourced from 
+         http://content8.flixster.com/movie/11/15/86/11158674_pro.jpg -->
     <ImageView
         android:id="@+id/ivPosterImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:contentDescription="poster image"
         android:src="@drawable/movie_poster" />
 
     <TextView

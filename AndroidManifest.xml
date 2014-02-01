@@ -3,7 +3,7 @@
     package="com.codepath.example.rottentomatoes"
     android:versionCode="1"
     android:versionName="1.0" >
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-sdk
@@ -23,6 +23,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.codepath.example.rottentomatoes.BoxOfficeDetailActivity"
+            android:label="@string/title_activity_box_office_detail" >
         </activity>
     </application>
 
