@@ -1,3 +1,14 @@
+# Android Studio
+.idea/
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*.iws
+build/**
+
 # built application files
 *.apk
 *.ap_
