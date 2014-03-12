@@ -1,9 +1,7 @@
 package com.codepath.example.rottentomatoes;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.ImageView;
@@ -53,7 +51,7 @@ public class BoxOfficeDetailActivity extends Activity {
 		// R.drawable.large_movie_poster from 
         // http://content8.flixster.com/movie/11/15/86/11158674_pro.jpg -->
 		Picasso.with(this).load(movie.getLargePosterUrl()).
-		    resize(120, 177).placeholder(R.drawable.large_movie_poster).
+		    placeholder(R.drawable.large_movie_poster).
 		    into(ivPosterImage);
 	}
 

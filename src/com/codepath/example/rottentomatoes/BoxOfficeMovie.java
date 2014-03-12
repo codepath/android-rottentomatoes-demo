@@ -33,7 +33,7 @@ public class BoxOfficeMovie implements Serializable {
 			b.year = jsonObject.getInt("year");
 			b.synopsis = jsonObject.getString("synopsis");
 			b.posterUrl = jsonObject.getJSONObject("posters").getString("thumbnail");
-			b.largePosterUrl = jsonObject.getJSONObject("posters").getString("profile");
+			b.largePosterUrl = jsonObject.getJSONObject("posters").getString("detailed");
 			b.criticsConsensus = jsonObject.getString("critics_consensus");
 			b.criticsScore = jsonObject.getJSONObject("ratings").getInt("critics_score");
 			b.audienceScore = jsonObject.getJSONObject("ratings").getInt("audience_score");
