@@ -1,6 +1,6 @@
 # RottenTomatoes BoxOffice Demo
 
-This is an Android demo application for displaying the latest box office movies using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
+This is an Android demo application for displaying the latest box office movies using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/Rotten-Tomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
 
 <img src="http://i.imgur.com/zQPzAxD.png" alt="Screen Demo" width="350" />
 &nbsp;
@@ -82,7 +82,7 @@ The app leverages the [Box Office Movies API](http://developer.rottentomatoes.co
 }
 ```
 
-See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
+See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/Rotten-Tomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
 
 ## Libraries
 
