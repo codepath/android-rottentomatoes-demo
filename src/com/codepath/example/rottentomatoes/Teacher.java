@@ -4,4 +4,5 @@ public class Teacher{
     int salery;
     int salery;
     int age;
+    string time;
 }
